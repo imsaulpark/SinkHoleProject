@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="direction">
+        <item>없음</item>
+        <item>동</item>
+        <item>서</item>
+        <item>남</item>
+        <item>북</item>
+    </string-array>
+
+</resources>

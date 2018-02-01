@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3"
+    tools:context="embedded.cse.cau.ac.kr.sinkholeproject.RankActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/back"
+                android:layout_margin="10dp"
+                android:onClick="backClicked"/>
+
+            <Button
+                android:layout_width="95dp"
+                android:layout_height="50dp"
+                android:background="@drawable/next"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:onClick="nextClicked"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:padding="0dp"
+            android:text="얕은심도 공동관리등급"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="160dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/grade"
+                android:layout_marginTop="10dp"
+                android:id="@+id/imageView" />
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_alignLeft="@+id/imageView"
+                android:layout_alignStart="@+id/imageView"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="79dp"
+                android:layout_marginStart="79dp"
+
+                android:id="@+id/imageView2" />
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_above="@+id/imageView2"
+                android:layout_marginBottom="21dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginStart="28dp"
+                android:layout_toEndOf="@+id/imageView2"
+                android:layout_toRightOf="@+id/imageView2"
+
+                android:id="@+id/imageView3" />
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_above="@+id/imageView3"
+                android:layout_marginBottom="27dp"
+                android:layout_marginLeft="67dp"
+                android:layout_marginStart="67dp"
+                android:layout_toEndOf="@+id/imageView3"
+                android:layout_toRightOf="@+id/imageView3"
+
+                android:id="@+id/imageView4" />
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_above="@+id/imageView4"
+                android:layout_marginBottom="11dp"
+                android:layout_marginLeft="53dp"
+                android:layout_marginStart="53dp"
+                android:layout_toEndOf="@+id/imageView4"
+                android:layout_toRightOf="@+id/imageView4"
+                android:id="@+id/imageView5"
+                 />
+        </RelativeLayout>
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:src="@drawable/gradeconcept"
+                />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:layout_marginTop="15dp"
+            >
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:padding="0dp"
+                android:text="    현재 공동관리등급 :"
+                android:textSize="17sp"
+                android:background="@drawable/button1"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                />
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="195dp"
+                android:background="@android:color/transparent"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:id="@+id/rank"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:layout_marginTop="15dp"
+            >
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:padding="0dp"
+                android:text="    복구제한시간 :"
+                android:textSize="15sp"
+                android:background="@drawable/button1"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                />
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="110dp"
+                android:background="@android:color/transparent"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:id="@+id/time"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
